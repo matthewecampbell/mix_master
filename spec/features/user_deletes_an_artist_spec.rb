@@ -13,7 +13,7 @@ RSpec.feature "User can delete an artist" do
 
     expect(current_path).to eq artist_path(artist)
 
-    click_on "Delete artist"
+    click_on "Delete"
 
     expect(current_path).to eq artists_path
 
