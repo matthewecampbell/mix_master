@@ -15,7 +15,7 @@ RSpec.feature "User can edit an artist" do
 
     fill_in "artist_name", with: "Billy Joel"
     fill_in "artist_image_path", with: artist_image_path
-    click_on "Edit Artist"
+    click_on "Update Artist"
 
     expect(current_path).to eq artist_path(artist)
 
